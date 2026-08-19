@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css Style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css?ver=21">
+    <link rel="stylesheet" href="css/slick.css">
+
+
+    <!-- Иконка сайта -->
+    <!-- <link rel="icon" href="img/icon-logo.svg" type="image/x-icon"> -->
+
+    <title>Гармония</title>
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header -->
+    <div class="top-bar__inner d-none d-lg-block">
+        <div class="container d-flex justify-content-between">
+            <address class="top-bar__address">Омск ул. Маяковского, 83</address>
+            <div class="top-bar__schedule">Пн-Пт: 09:00-20:00, Сб-Вс: 09:00-14:00</div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg main-header__navbar">
+            <div class="container">
+                <a class="navbar-brand main-header__logo" href="#">
+                    <img class="header-main-logo" src="img/logo.svg" alt="logo-site">
+                    <img class="header-main-logo__open-menu" src="img/logo-open-menu.svg" alt="logo-site-open">
+                </a>
+                <button class="navbar-toggler nav-menu-button d-flex d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="nav-menu-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse main-header__nav-block" id="navbarSupportedContent">
+                    <ul class="navbar-nav main-header__nav-items mx-auto">
+                        <li class="nav-item main-header__nav-item">
+                            <a class="main-header__nav-item-link" href="#">Услуги</a>
+                        </li>
+                        <li class="nav-item main-header__nav-item">
+                            <a class="main-header__nav-item-link" href="#">Отзывы</a>
+                        </li>
+                        <li class="nav-item main-header__nav-item">
+                            <a class="main-header__nav-item-link" href="#">Специалисты</a>
+                        </li>
+                        <li class="nav-item main-header__nav-item">
+                            <a class="main-header__nav-item-link" href="#">Цены</a>
+                        </li>
+                        <li class="nav-item main-header__nav-item">
+                            <a class="main-header__nav-item-link" href="#">Акции</a>
+                        </li>
+                        <li class="nav-item main-header__nav-item">
+                            <a class="main-header__nav-item-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="main-header__nav-block__right d-flex">
+                        <div class="header-contacts">
+                            <span class="header-contacts__title d-block d-lg-none">Связаться с нами:</span>
+                            <p class="header-contacts__subtitle d-block d-lg-none">Мы ответим вам в рабочее время</p>
+                            <ul class="contacts__info-list header-info">
+                                <li class="contacts__item">
+                                    <div class="contacts__social-block header d-flex">
+                                        <a href="#" class="social-icon d-flex">
+                                            <img src="img/Max.svg" alt="Max">
+                                        </a>
+                                        <a href="#" class="social-icon d-flex">
+                                            <img src="img/VK.svg" alt="Vk">
+                                        </a>
+                                        <a href="#" class="social-icon d-flex">
+                                            <img src="img/telegram.svg" alt="Telegram">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="contacts__item header-info-tel">
+                                    <span class="contacts__item-value">
+                                        <a href="tel:+79136288113">+ 7 (913)628-81-13</a>
+                                        <a href="tel:+73812325443">+ 7 (3812) 325-443</a>
+                                    </span>
+                                </li>
+                                <li class="contacts__item">
+                                    <span class="contacts__item-value"><address>Омск, ул. Маяковского, 83</address></span>
+                                </li>
+                                <li class="contacts__item">
+                                    <span class="contacts__item-value">
+                                        <a href="mailto:garmoniy@bk.ru">garmoniy@bk.ru</a>
+                                    </span>
+                                </li>
+                                <li class="contacts__item">
+                                    <span class="contacts__item-value">
+                                        <span>Пн-Пт: 09:00-20:00, </span>
+                                        <span>Сб: 09:00-14:00</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="visually-icon d-none d-lg-flex" href="#">
+                            <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.544651 5.25141C0.485116 5.41179 0.485116 5.58821 0.544651 5.74859C1.12449 7.15454 2.10873 8.35665 3.37259 9.20254C4.63646 10.0484 6.12303 10.5 7.64385 10.5C9.16466 10.5 10.6512 10.0484 11.9151 9.20254C13.179 8.35665 14.1632 7.15454 14.743 5.74859C14.8026 5.58821 14.8026 5.41179 14.743 5.25141C14.1632 3.84546 13.179 2.64335 11.9151 1.79746C10.6512 0.951569 9.16466 0.5 7.64385 0.5C6.12303 0.5 4.63646 0.951569 3.37259 1.79746C2.10873 2.64335 1.12449 3.84546 0.544651 5.25141Z" stroke="#1E8DF6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.64402 7.64302C8.82759 7.64302 9.78707 6.68355 9.78707 5.49998C9.78707 4.31641 8.82759 3.35693 7.64402 3.35693C6.46045 3.35693 5.50098 4.31641 5.50098 5.49998C5.50098 6.68355 6.46045 7.64302 7.64402 7.64302Z" stroke="#1E8DF6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <div class="btn-record-block header-btn">
+                            <button class="btn-record d-flex full" type="button">
+                                <span class="btn-record__text">Записаться</span>
+                                <span class="btn-record__circle d-flex">
+                                    <svg class="arrow-icon" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.75 4.77295C0.335786 4.77295 0 5.10874 0 5.52295C0 5.93716 0.335786 6.27295 0.75 6.27295V5.52295V4.77295ZM13.2803 6.05328C13.5732 5.76039 13.5732 5.28551 13.2803 4.99262L8.50736 0.219648C8.21447 -0.073245 7.73959 -0.073245 7.4467 0.219648C7.15381 0.512542 7.15381 0.987415 7.4467 1.28031L11.6893 5.52295L7.4467 9.76559C7.15381 10.0585 7.15381 10.5334 7.4467 10.8263C7.73959 11.1191 8.21447 11.1191 8.50736 10.8263L13.2803 6.05328ZM0.75 5.52295V6.27295H12.75V5.52295V4.77295H0.75V5.52295Z" fill="currentColor"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- /Header -->
+
+    <!-- main -->
+    <main>
+
+        <!-- hero -->
+        <section class="main-hero">
+            <div class="container-hero">
+                <div class="hero-list garmoniy-main-slaider" data-carousel-id="hero-slider">
+                    <div class="hero-item">
+                        <img class="hero-item-img" src="img/hero-img.jpg" alt="#">
+                        <div class="container">
+                            <div class="hero-item__wrapper">
+                                <div class="hero-item__content">
+                                    <span class="hero-item__tag">Современная стоматология для всей семьи</span>
+                                    <h1 class="hero-item__title hero-main-title">Стоматологическая клиника «Гармония», <span>все виды услуг!</span></h1>
+                                    <p class="hero-item__subtitle">Комплексный подход, передовые технологии и забота о каждом пациенте</p>
+                                    <div class="btn-record-block hero-btn">
+                                        <button class="btn-record d-flex full" type="button">
+                                            <span class="btn-record__text">Записаться на бесплатную консультацию</span>
+                                            <span class="btn-record__circle d-flex">
+                                                <svg class="arrow-icon" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.75 4.77295C0.335786 4.77295 0 5.10874 0 5.52295C0 5.93716 0.335786 6.27295 0.75 6.27295V5.52295V4.77295ZM13.2803 6.05328C13.5732 5.76039 13.5732 5.28551 13.2803 4.99262L8.50736 0.219648C8.21447 -0.073245 7.73959 -0.073245 7.4467 0.219648C7.15381 0.512542 7.15381 0.987415 7.4467 1.28031L11.6893 5.52295L7.4467 9.76559C7.15381 10.0585 7.15381 10.5334 7.4467 10.8263C7.73959 11.1191 8.21447 11.1191 8.50736 10.8263L13.2803 6.05328ZM0.75 5.52295V6.27295H12.75V5.52295V4.77295H0.75V5.52295Z" fill="currentColor"/>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <ul class="hero-item__advantages">
+                                        <li class="hero-item__advantage">
+                                            <span class="hero-item__advantage-icon"><img src="img/hero-icon.svg" alt="hero-img"></span>
+                                            <div class="hero-item__advantage-text">
+                                                <h3 class="hero-item__advantage-title">Гарантия</h3>
+                                                <p class="hero-item__advantage-subtitle">на все виды работ</p>
+                                            </div>
+                                        </li>
+                                        <li class="hero-item__advantage">
+                                            <span class="hero-item__advantage-icon"><img src="img/hero-icon.svg" alt="hero-img"></span>
+                                            <div class="hero-item__advantage-text">
+                                                <h3 class="hero-item__advantage-title">Рассрочка</h3>
+                                                <p class="hero-item__advantage-subtitle">на лечение</p>
+                                            </div>
+                                        </li>
+                                        <li class="hero-item__advantage">
+                                            <span class="hero-item__advantage-icon"><img src="img/hero-icon.svg" alt="hero-img"></span>
+                                            <div class="hero-item__advantage-text">
+                                                <h3 class="hero-item__advantage-title">Современные</h3>
+                                                <p class="hero-item__advantage-subtitle">оборудование и материалы</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="hero-item__card">
+                                    <div class="hero-item__card-wrapper">
+                                        <div class="hero-card__img"><img src="img/hero-card-img.jpg" alt="card-img"></div>
+                                        <h3 class="hero-card__title">All-on-4 и All-on-6</h3>
+                                        <ul class="hero-card__list">
+                                            <li class="hero-card__list-item"><p>Цифровое планирование операции</p></li>
+                                            <li class="hero-card__list-item"><p>Цифровое планирование операции</p></li>
+                                            <li class="hero-card__list-item"><p>Цифровое планирование операции</p></li>
+                                        </ul>
+                                        <a href="" class="hero-card__link link-more d-flex">
+                                            <span>Узнать подробнее</span>
+                                            <img src="img/arrow.svg" alt="more">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-item">
+                        <img class="hero-item-img" src="img/hero-img.jpg" alt="#">
+                        <div class="container">
+                            <div class="hero-item__wrapper">
+                                <div class="hero-item__content">
+                                    <span class="hero-item__tag">Современная стоматология для всей семьи</span>
+                                    <h1 class="hero-item__title hero-main-title">Стоматологическая клиника «Гармония», <span>все виды услуг!</span></h1>
+                                    <p class="hero-item__subtitle">Комплексный подход, передовые технологии и забота о каждом пациенте</p>
+                                    <div class="btn-record-block hero-btn">
+                                        <button class="btn-record d-flex full" type="button">
+                                            <span class="btn-record__text">Записаться на бесплатную консультацию</span>
+                                            <span class="btn-record__circle d-flex">
+                                                <svg class="arrow-icon" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.75 4.77295C0.335786 4.77295 0 5.10874 0 5.52295C0 5.93716 0.335786 6.27295 0.75 6.27295V5.52295V4.77295ZM13.2803 6.05328C13.5732 5.76039 13.5732 5.28551 13.2803 4.99262L8.50736 0.219648C8.21447 -0.073245 7.73959 -0.073245 7.4467 0.219648C7.15381 0.512542 7.15381 0.987415 7.4467 1.28031L11.6893 5.52295L7.4467 9.76559C7.15381 10.0585 7.15381 10.5334 7.4467 10.8263C7.73959 11.1191 8.21447 11.1191 8.50736 10.8263L13.2803 6.05328ZM0.75 5.52295V6.27295H12.75V5.52295V4.77295H0.75V5.52295Z" fill="currentColor"/>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <ul class="hero-item__advantages">
+                                        <li class="hero-item__advantage">
+                                            <span class="hero-item__advantage-icon"><img src="img/hero-icon.svg" alt="hero-img"></span>
+                                            <div class="hero-item__advantage-text">
+                                                <h3 class="hero-item__advantage-title">Гарантия</h3>
+                                                <p class="hero-item__advantage-subtitle">на все виды работ</p>
+                                            </div>
+                                        </li>
+                                        <li class="hero-item__advantage">
+                                            <span class="hero-item__advantage-icon"><img src="img/hero-icon.svg" alt="hero-img"></span>
+                                            <div class="hero-item__advantage-text">
+                                                <h3 class="hero-item__advantage-title">Рассрочка</h3>
+                                                <p class="hero-item__advantage-subtitle">на лечение</p>
+                                            </div>
+                                        </li>
+                                        <li class="hero-item__advantage">
+                                            <span class="hero-item__advantage-icon"><img src="img/hero-icon.svg" alt="hero-img"></span>
+                                            <div class="hero-item__advantage-text">
+                                                <h3 class="hero-item__advantage-title">Современные</h3>
+                                                <p class="hero-item__advantage-subtitle">оборудование и материалы</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="hero-item__card"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container hero-slaider__controls">
+                    <div class="slaider__controls-empty"></div>
+                    <div class="dots_inner hero" data-dots-for="hero-slider"></div>
+                    <div class="arrows_inner d-flex hero" data-arrows-for="hero-slider"></div>
+                </div>
+            </div>
+        </section>
+        <!-- /hero -->
+
+        <!-- about-clinic -->
+
+        <section class="about-clinic">
+            <div class="container d-flex about-clinic__container">
+                <h2 class="about-clinic__title d-lg-none">О клинике</h2>
+                <div class="about-clinic__block-img"><img src="img/about-img.jpg" alt="about-clinic"></div>
+                <div class="about-clinic__block-content d-flex">
+                    <h2 class="about-clinic__title d-none d-lg-block">О клинике</h2>
+                    <div class="about-clinic__stats d-grid">
+                        <div class="about-clinic__stat d-flex">
+                            <span class="about-clinic__stat-number">18</span>
+                            <p class="about-clinic__stat-desc">18 лет мы делаем ваши улыбки лучше</p>
+                        </div>
+                        <div class="about-clinic__stat d-flex">
+                            <span class="about-clinic__stat-number">10</span>
+                            <p class="about-clinic__stat-desc">Наш штат состоит из 10 стоматологов с большим опытом</p>
+                        </div>
+                        <div class="about-clinic__stat d-flex">
+                            <span class="about-clinic__stat-number">15 000+</span>
+                            <p class="about-clinic__stat-desc">довольных пациентов</p>
+                        </div>
+                        <div class="about-clinic__stat d-flex">
+                            <span class="about-clinic__stat-number">10</span>
+                            <p class="about-clinic__stat-desc">Наш штат состоит из 10 стоматологов с большим опытом</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- /about-clinic -->
+
+        <!-- services -->
+
+        <section class="services">
+            <div class="container">
+                <h2 class="services-title">Услуги</h2>
+                <div class="services-content">
+                    <div class="services-content__items d-grid">
+                        <article class="services-content__item d-flex">
+                            <div class="services-content__item-icon d-flex"><img src="img/services-icon.svg" alt="icon-services"></div>
+                            <h3 class="services-content__item-title">Хирургическая стоматология</h3>
+                            <p class="services-content__item-desc">Раздел стоматологических услуг, направленных на изучение заболеваний костей лицевого скелета и органов области рта, а также отдела шеи и лица</p>
+                            <a href="" class="services-content__item-link link-more d-flex mt-auto">
+                                <span>Узнать подробнее</span>
+                                <img src="img/arrow.svg" alt="more">
+                            </a>
+                        </article>
+                        <article class="services-content__item d-flex">
+                            <div class="services-content__item-icon d-flex"><img src="img/services-icon.svg" alt="icon-services"></div>
+                            <h3 class="services-content__item-title">Протезирование зубов</h3>
+                            <p class="services-content__item-desc">Протезирование это услуги, относящиеся к восстановлению разрушившихся зубов и целостности зубного ряда</p>
+                            <a href="" class="services-content__item-link link-more d-flex mt-auto">
+                                <span>Узнать подробнее</span>
+                                <img src="img/arrow.svg" alt="more">
+                            </a>
+                        </article>
+                        <article class="services-content__item d-flex">
+                            <div class="services-content__item-icon d-flex"><img src="img/services-icon.svg" alt="icon-services"></div>
+                            <h3 class="services-content__item-title">Пародонтология</h3>
+                            <p class="services-content__item-desc">Направление стоматологии, которое занимается профилактикой и лечением пародонта — заболевания тканей вокруг зуб (опорный аппарат зуба)</p>
+                            <a href="" class="services-content__item-link link-more d-flex mt-auto">
+                                <span>Узнать подробнее</span>
+                                <img src="img/arrow.svg" alt="more">
+                            </a>
+                        </article>
+                        <article class="services-content__item d-flex">
+                            <div class="services-content__item-icon d-flex"><img src="img/services-icon.svg" alt="icon-services"></div>
+                            <h3 class="services-content__item-title">Ортодонтия</h3>
+                            <p class="services-content__item-desc">Раздел стоматологии, занимающийся изучением, лечением и профилактикой зубочелюстных аномалий различной степени сложности</p>
+                            <a href="" class="services-content__item-link link-more d-flex mt-auto">
+                                <span>Узнать подробнее</span>
+                                <img src="img/arrow.svg" alt="more">
+                            </a>
+                        </article>
+                        <article class="services-content__item d-flex">
+                            <div class="services-content__item-icon d-flex"><img src="img/services-icon.svg" alt="icon-services"></div>
+                            <h3 class="services-content__item-title">Терапевтическая стоматология</h3>
+                            <p class="services-content__item-desc">Основное направление во взрослой стоматологии. В её компетенции избавление от большинства причин зубной боли, неприятного запаха изо рта и кровоточивости десен</p>
+                            <a href="" class="services-content__item-link link-more d-flex mt-auto">
+                                <span>Узнать подробнее</span>
+                                <img src="img/arrow.svg" alt="more">
+                            </a>
+                        </article>
+                        <article class="services-content__item d-flex">
+                            <div class="services-content__item-icon d-flex"><img src="img/services-icon.svg" alt="icon-services"></div>
+                            <h3 class="services-content__item-title">Имплантация зубов</h3>
+                            <p class="services-content__item-desc">Установка специального стоматологического штифта с резьбой, на который изготавливается ортопедическая конструкция, заменяющая естественные зубы</p>
+                            <a href="" class="services-content__item-link link-more d-flex mt-auto">
+                                <span>Узнать подробнее</span>
+                                <img src="img/arrow.svg" alt="more">
+                            </a>
+                        </article>
+                        <article class="services-content__item d-flex">
+                            <div class="services-content__item-icon d-flex"><img src="img/services-icon.svg" alt="icon-services"></div>
+                            <h3 class="services-content__item-title">Протезирование на все 4 и 6</h3>
+                            <p class="services-content__item-desc">Восстановление жевательной функции и эстетики зубов в случае их полной потери при протезировании на 4 и 6 имплантатах за один день</p>
+                            <a href="" class="services-content__item-link link-more d-flex mt-auto">
+                                <span>Узнать подробнее</span>
+                                <img src="img/arrow.svg" alt="more">
+                            </a>
+                        </article>
+                        <article class="services-content__item record d-flex">
+                            <h3 class="services-content__item-title">Запишитесь на первичный приём</h3>
+                            <p class="services-content__item-desc">Познакомьтесь с врачом и узнайте точную стоимость лечения</p>
+                            <div class="btn-record-block services-btn-record mt-auto">
+                                <button class="btn-record d-flex invers full" type="button">
+                                    <span class="btn-record__text">Записаться</span>
+                                    <span class="btn-record__circle d-flex">
+                                        <svg class="arrow-icon" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.75 4.77295C0.335786 4.77295 0 5.10874 0 5.52295C0 5.93716 0.335786 6.27295 0.75 6.27295V5.52295V4.77295ZM13.2803 6.05328C13.5732 5.76039 13.5732 5.28551 13.2803 4.99262L8.50736 0.219648C8.21447 -0.073245 7.73959 -0.073245 7.4467 0.219648C7.15381 0.512542 7.15381 0.987415 7.4467 1.28031L11.6893 5.52295L7.4467 9.76559C7.15381 10.0585 7.15381 10.5334 7.4467 10.8263C7.73959 11.1191 8.21447 11.1191 8.50736 10.8263L13.2803 6.05328ZM0.75 5.52295V6.27295H12.75V5.52295V4.77295H0.75V5.52295Z" fill="currentColor"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- /services -->
+
+        <!-- stocks -->
+
+        <section class="stocks">
+            <div class="container stocks-container">
+                <div class="stocks-block-top block-top d-flex">
+                    <h2 class="stocks-title">Акции</h2>
+                    <div class="stocks-block-top__right block-top__right d-none d-lg-flex">
+                        <a href="#" class="stocks-all-link link-more d-flex">
+                            <span>Все акции</span>
+                            <img src="img/arrow.svg" alt="more">
+                        </a>
+                        <div class="arrows_inner d-flex" data-arrows-for="stocks-slider"></div>
+                    </div>
+                </div>
+                <div class="stocks-list garmoniy-main-slaider" data-carousel-id="stocks-slider">
+                    <article class="stocks-card">
+                        <div class="stocks-card__img">
+                            <img src="img/stocks-card-img.jpg" alt="stocks-card-img">
+                        </div>
+                        <h3 class="stocks-card__title">Пародоксальный комплекс</h3>
+                        <div class="stocks-card__content d-flex">
+                            <div class="stocks-card__content-price">
+                                <span class="stocks-card__content-price new">15 400 ₽</span>
+                                <span class="stocks-card__content-price old">17 800 ₽</span>
+                            </div>
+                            <a href="#" class="stocks-card__content-link link-more d-none d-lg-flex">
+                                <span>Узнать подробнее</span>
+                                <img src="img/arrow.svg" alt="more">
+                            </a>
+                        </div>
+                    </article>
+                    <article class="stocks-card">
+                        <div class="stocks-card__img">
+                            <img src="img/about-img.jpg" alt="stocks-card-img">
+                        </div>
+                        <h3 class="stocks-card__title">Гигиена зубов + отбеливание</h3>
+                        <div class="stocks-card__content d-flex">
+                            <div class="stocks-card__content-price">
+                                <span class="stocks-card__content-price new">15 400 ₽</span>
+                                <span class="stocks-card__content-price old">17 800 ₽</span>
+                            </div>
+                            <a href="#" class="stocks-card__content-link link-more d-none d-lg-flex">
+                                <span>Узнать подробнее</span>
+                                <img src="img/arrow.svg" alt="more">
+                            </a>
+                        </div>
+                    </article>
+                    <article class="stocks-card">
+                        <div class="stocks-card__img">
+                            <img src="img/stocks-card-img.jpg" alt="stocks-card-img">
+                        </div>
+                        <h3 class="stocks-card__title">Пародоксальный комплекс</h3>
+                        <div class="stocks-card__content d-flex">
+                            <div class="stocks-card__content-price">
+                                <span class="stocks-card__content-price new">15 400 ₽</span>
+                                <span class="stocks-card__content-price old">17 800 ₽</span>
+                            </div>
+                            <a href="#" class="stocks-card__content-link link-more d-none d-lg-flex">
+                                <span>Узнать подробнее</span>
+                                <img src="img/arrow.svg" alt="more">
+                            </a>
+                        </div>
+                    </article>
+                    <article class="stocks-card">
+                        <div class="stocks-card__img">
+                            <img src="img/stocks-card-img.jpg" alt="stocks-card-img">
+                        </div>
+                        <h3 class="stocks-card__title">Пародоксальный комплекс</h3>
+                        <div class="stocks-card__content d-flex">
+                            <div class="stocks-card__content-price">
+                                <span class="stocks-card__content-price new">15 400 ₽</span>
+                                <span class="stocks-card__content-price old">17 800 ₽</span>
+                            </div>
+                            <a href="#" class="stocks-card__content-link link-more d-none d-lg-flex">
+                                <span>Узнать подробнее</span>
+                                <img src="img/arrow.svg" alt="more">
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="btn-record-block stocks-btn-more d-block d-lg-none">
+                    <a href="#" class="btn-record d-flex full">
+                        <span class="btn-record__text text-center">Все акции</span>
+                        <span class="btn-record__circle d-flex">
+                            <svg class="arrow-icon" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 4.77295C0.335786 4.77295 0 5.10874 0 5.52295C0 5.93716 0.335786 6.27295 0.75 6.27295V5.52295V4.77295ZM13.2803 6.05328C13.5732 5.76039 13.5732 5.28551 13.2803 4.99262L8.50736 0.219648C8.21447 -0.073245 7.73959 -0.073245 7.4467 0.219648C7.15381 0.512542 7.15381 0.987415 7.4467 1.28031L11.6893 5.52295L7.4467 9.76559C7.15381 10.0585 7.15381 10.5334 7.4467 10.8263C7.73959 11.1191 8.21447 11.1191 8.50736 10.8263L13.2803 6.05328ZM0.75 5.52295V6.27295H12.75V5.52295V4.77295H0.75V5.52295Z" fill="currentColor"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- /stocks -->
+
+        <!-- specialists -->
+
+        <section class="specialists">
+            <div class="container specialists-block">
+                <div class="specialists-block-top block-top d-flex">
+                    <h2 class="specialists-title">Специалисты</h2>
+                    <div class="specialists-block-top__right block-top__right d-none d-lg-flex">
+                        <a href="#" class="specialists-all-link link-more d-flex">
+                            <span>Все специалисты</span>
+                            <img src="img/arrow.svg" alt="more">
+                        </a>
+                        <div class="arrows_inner d-flex" data-arrows-for="specialists-slider"></div>
+                    </div>
+                </div>
+                <div class="specialists-list garmoniy-main-slaider" data-carousel-id="specialists-slider">
+                    <article class="specialists-card">
+                        <div class="specialists-card__img d-flex">
+                            <img src="img/specialists-img.png" alt="specialists-card-img">
+                        </div>
+                        <h3 class="specialists-card__title">Путинцев Сергей Борисович</h3>
+                        <p class="specialists-card__subtitle">Директор клиники, кандидат медицинских наук. Врач стоматолог-ортопед высшей квалификационной категории. Стаж 30 лет</p>
+                        <a href="#" class="specialists-card__link link-more d-flex">
+                            <span>Узнать подробнее</span>
+                            <img src="img/arrow.svg" alt="more">
+                        </a>
+                    </article>
+                    <article class="specialists-card">
+                        <div class="specialists-card__img d-flex">
+                            <img src="img/specialists-img.png" alt="specialists-card-img">
+                        </div>
+                        <h3 class="specialists-card__title">Путинцев Сергей Борисович</h3>
+                        <p class="specialists-card__subtitle"></p>
+                        <a href="#" class="specialists-card__link link-more d-flex">
+                            <span>Узнать подробнее</span>
+                            <img src="img/arrow.svg" alt="more">
+                        </a>
+                    </article>
+                    <article class="specialists-card">
+                        <div class="specialists-card__img d-flex">
+                            <img src="img/specialists-img.png" alt="specialists-card-img">
+                        </div>
+                        <h3 class="specialists-card__title">Путинцев Сергей Борисович</h3>
+                        <p class="specialists-card__subtitle">Директор клиники, кандидат медицинских наук. Врач стоматолог-ортопед высшей квалификационной категории. Стаж 30 лет</p>
+                        <a href="#" class="specialists-card__link link-more d-flex">
+                            <span>Узнать подробнее</span>
+                            <img src="img/arrow.svg" alt="more">
+                        </a>
+                    </article>
+                    <article class="specialists-card">
+                        <div class="specialists-card__img d-flex">
+                            <img src="img/specialists-img.png" alt="specialists-card-img">
+                        </div>
+                        <h3 class="specialists-card__title">Путинцев Сергей Борисович</h3>
+                        <p class="specialists-card__subtitle">Директор клиники, кандидат медицинских наук. Врач стоматолог-ортопед высшей квалификационной категории. Стаж 30 лет</p>
+                        <a href="#" class="specialists-card__link link-more d-flex">
+                            <span>Узнать подробнее</span>
+                            <img src="img/arrow.svg" alt="more">
+                        </a>
+                    </article>
+                    <article class="specialists-card">
+                        <div class="specialists-card__img d-flex">
+                            <img src="img/specialists-img.png" alt="specialists-card-img">
+                        </div>
+                        <h3 class="specialists-card__title">Путинцев Сергей Борисович</h3>
+                        <p class="specialists-card__subtitle">Директор клиники, кандидат медицинских наук. Врач стоматолог-ортопед высшей квалификационной категории. Стаж 30 лет</p>
+                        <a href="#" class="specialists-card__link link-more d-flex">
+                            <span>Узнать подробнее</span>
+                            <img src="img/arrow.svg" alt="more">
+                        </a>
+                    </article>
+                </div>
+                <div class="btn-record-block specialists-btn-more d-block d-lg-none">
+                    <a href="#" class="btn-record d-flex full">
+                        <span class="btn-record__text text-center">Все специалисты</span>
+                        <span class="btn-record__circle d-flex">
+                            <svg class="arrow-icon" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.75 4.77295C0.335786 4.77295 0 5.10874 0 5.52295C0 5.93716 0.335786 6.27295 0.75 6.27295V5.52295V4.77295ZM13.2803 6.05328C13.5732 5.76039 13.5732 5.28551 13.2803 4.99262L8.50736 0.219648C8.21447 -0.073245 7.73959 -0.073245 7.4467 0.219648C7.15381 0.512542 7.15381 0.987415 7.4467 1.28031L11.6893 5.52295L7.4467 9.76559C7.15381 10.0585 7.15381 10.5334 7.4467 10.8263C7.73959 11.1191 8.21447 11.1191 8.50736 10.8263L13.2803 6.05328ZM0.75 5.52295V6.27295H12.75V5.52295V4.77295H0.75V5.52295Z" fill="currentColor"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- specialists -->
+
+        <!-- price -->
+
+        <section class="price">
+            <div class="container">
+                <h2 class="price-title">Цены</h2>
+                <div class="accordion accordion-flush price-accardion" id="accordionFlushExample">
+                    <div class="accordion-item price-accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Терапевтическая стоматология
+                            </button>
+                        </h3>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="price-table">
+                                    <div class="price-table__item">
+                                        <span class="price-table__item-desc">Лечение кариеса</span>
+                                        <span class="price-table__item-price">от 4 500 ₽</span>
+                                    </div>
+                                    <div class="price-table__item">
+                                        <span class="price-table__item-desc">Реставрация зуба фотополимерным материалом</span>
+                                        <span class="price-table__item-price">от 5 000 ₽</span>
+                                    </div>
+                                    <div class="price-table__item">
+                                        <span class="price-table__item-desc">Постановка поста (армирование зуба) Титановый штифт Mailliefer</span>
+                                        <span class="price-table__item-price">от 1 040 ₽</span>
+                                    </div>
+                                    <div class="price-table__item">
+                                        <span class="price-table__item-desc">Распломбирование корневых каналов</span>
+                                        <span class="price-table__item-price">от 900 ₽</span>
+                                    </div>
+                                    <div class="price-table__item">
+                                        <span class="price-table__item-desc">Сложное распломбирование (в т.ч. удаление инородного тела из корневого канала) (1 канал)</span>
+                                        <span class="price-table__item-price">от 1 050 ₽</span>
+                                    </div>
+                                    <div class="price-table__item">
+                                        <span class="price-table__item-desc">Лечение пульпита (1 корневой канал без стоимости пломбы)</span>
+                                        <span class="price-table__item-price">от 7 500 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item price-accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Хирургическая стоматология
+                            </button>
+                        </h3>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"></div>
+                        </div>
+                    </div>
+                    <div class="accordion-item price-accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Пародонтология
+                            </button>
+                        </h3>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- /price -->
+
+        <!-- consultation -->
+
+        <section class="consultation">
+            <div class="container">
+                <div class="consultation-wrapper d-lg-grid">
+                    <div class="garmoniy-form__content consultation-content">
+                        <h2 class="garmoniy-form__title">Запишитесь на бесплатную консультацию</h2>
+                        <p class="garmoniy-form__subtitle">Наш менеджер свяжется с вами в рабочее время</p>
+                        <form class="garmoniy-form" action="#" method="POST">
+                            <div class="garmoniy-form__body"></div>
+                            <div class="btn-record-block form-btn-record">
+                                <button class="btn-record d-flex invers full" type="submit">
+                                    <span class="btn-record__text">Записаться</span>
+                                    <span class="btn-record__circle d-flex">
+                                        <svg class="arrow-icon" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.75 4.77295C0.335786 4.77295 0 5.10874 0 5.52295C0 5.93716 0.335786 6.27295 0.75 6.27295V5.52295V4.77295ZM13.2803 6.05328C13.5732 5.76039 13.5732 5.28551 13.2803 4.99262L8.50736 0.219648C8.21447 -0.073245 7.73959 -0.073245 7.4467 0.219648C7.15381 0.512542 7.15381 0.987415 7.4467 1.28031L11.6893 5.52295L7.4467 9.76559C7.15381 10.0585 7.15381 10.5334 7.4467 10.8263C7.73959 11.1191 8.21447 11.1191 8.50736 10.8263L13.2803 6.05328ZM0.75 5.52295V6.27295H12.75V5.52295V4.77295H0.75V5.52295Z" fill="currentColor"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                        <img class="garmoniy-form__img d-none d-lg-block" src="img/form-img.png" alt="form-img">
+                    </div>
+                    <div class="consultation-img d-none d-lg-block">
+                        <img src="img/consultation-img.jpg" alt="consultation-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- /consultation -->
+
+        <!-- awards -->
+
+        <section class="awards">
+            <div class="container">
+                <div class="awards-block__content">
+                    <div class="awards-content d-flex">
+                        <h2 class="awards-title">Наши награды</h2>
+                        <p class="awards-desc span">Стоматологическая клиника "Гармония" заняла Топ-5 в Рейтинге стоматологий Омска в 2026 году!</p>
+                        <p class="awards-desc">Рейтинг оценивает клиники по важным критериям: качество сервиса, оборудование, охват услуг, квалификация специалистов и стандарты работы. Участие в Рейтинге подтверждает высокий уровень услуг и профессионализм команды нашей клиники. Мы используем этот опыт, чтобы развиваться и улучшать сервис для всех наших пациентов.</p>
+                        <div class="arrows_inner d-flex mt-auto" data-arrows-for="awards-slider"></div>
+                    </div>
+                    <div class="awards-list garmoniy-main-slaider" data-carousel-id="awards-slider">
+                        <article class="awards-card"><img src="img/awards-1.jpg" alt="#"></article>
+                        <article class="awards-card"><img src="img/awards-2.jpg" alt="#"></article>
+                        <article class="awards-card"><img src="img/awards-3.jpg" alt="#"></article>
+                        <article class="awards-card"><img src="img/awards-1.jpg" alt="#"></article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- /awards -->
+
+        <!-- contacts -->
+
+        <section class="contacts">
+            <div class="container">
+                <h2 class="contacts-title">Контакты</h2>
+                <ul class="contacts__info-list main-contacts-section d-grid">
+                    <li class="contacts__item">
+                        <span class="contacts__item-label">Адрес:</span>
+                        <span class="contacts__item-value"><address>Омск, ул. Маяковского, 83</address></span>
+                    </li>
+                    <li class="contacts__item">
+                        <span class="contacts__item-label">Телефон:</span>
+                        <span class="contacts__item-value">
+                            <a href="tel:+79136288113">+ 7 (913)628-81-13,</a>
+                            <a href="tel:+73812325443">+ 7 (3812) 325-443</a>
+                        </span>
+                    </li>
+                    <li class="contacts__item">
+                        <span class="contacts__item-label">e-mail:</span>
+                        <span class="contacts__item-value">
+                            <a href="mailto:garmoniy@bk.ru">garmoniy@bk.ru</a>
+                        </span>
+                    </li>
+                    <li class="contacts__item">
+                        <span class="contacts__item-label">График работы:</span>
+                        <span class="contacts__item-value">
+                            <span>Пн-Пт: 09:00-20:00, </span>
+                            <span>Сб: 09:00-14:00</span>
+                        </span>
+                    </li>
+                    <li class="contacts__item">
+                        <div class="contacts__social-block contacts d-flex">
+                            <a href="#" class="social-icon d-flex">
+                                <img src="img/Max-invers.svg" alt="Max">
+                            </a>
+                            <a href="#" class="social-icon d-flex">
+                                <img src="img/VK-invers.svg" alt="Vk">
+                            </a>
+                            <a href="#" class="social-icon d-flex">
+                                <img src="img/telegram-invers.svg" alt="Telegram">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="contacts__map"></div>
+            </div>
+        </section>
+
+        <!-- /contacts -->
+
+    </main>
+    <!-- /main -->
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="main-footer d-grid">
+                    <div class="footer-column footer-brand">
+                        <div class="footer-brand__wrapper">
+                            <a href="#" class="footer-brand__logo">
+                                <img src="img/logo-open-menu.svg" alt="logo">
+                            </a>
+                            <div class="contacts__social-block footer d-flex d-lg-none">
+                                <a href="#" class="social-icon d-flex">
+                                    <img src="img/Max.svg" alt="Max">
+                                </a>
+                                <a href="#" class="social-icon d-flex">
+                                    <img src="img/VK.svg" alt="Vk">
+                                </a>
+                                <a href="#" class="social-icon d-flex">
+                                    <img src="img/telegram.svg" alt="Telegram">
+                                </a>
+                            </div>
+                        </div>
+                        <p class="footer-brand__copy">2026. Стоматологическая клиника «Гармония». Все права защищены.</p>
+                        <div class="footer-brand__documents d-flex">
+                            <a href="#">Политика конфиденциальности</a>
+                            <a href="#">Публичная оферта</a>
+                        </div>
+                    </div>
+                    <div class="footer-column footer-services d-none d-lg-block">
+                        <h3 class="footer-title services">Услуги</h3>
+                        <ul class="footer-list services d-grid">
+                            <li class="footer-list__item"><a href="#" class="footer-list__item-link">Терапевтическая стоматология</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__item-link">Хирургическая стоматология</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__item-link">Детская стоматология</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__item-link">Протезирование все на 4 и 6</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__item-link">Протезирование зубов</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__item-link">Имплантация зубов</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__item-link">Пародонтология</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__item-link">Ортодонтия</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column footer-navig d-none d-lg-block">
+                        <h3 class="footer-title navig">Клиника</h3>
+                        <ul class="footer-list navig d-grid">
+                            <li class="footer-list__item"><a href="#" class="footer-list__item-link">Контакты</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__item-link">Награды</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__item-link">О клинике</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__item-link">Цены</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__item-link">Специалисты</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__item-link">Акции</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__item-link">Наши работы</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column footer-info">
+                        <div class="footer-info__links d-none d-lg-flex">
+                            <div class="contacts__social-block footer d-flex">
+                                <a href="#" class="social-icon d-flex">
+                                    <img src="img/Max.svg" alt="Max">
+                                </a>
+                                <a href="#" class="social-icon d-flex">
+                                    <img src="img/VK.svg" alt="Vk">
+                                </a>
+                                <a href="#" class="social-icon d-flex">
+                                    <img src="img/telegram.svg" alt="Telegram">
+                                </a>
+                            </div>
+                            <div class="btn-record-block footer-btn-record">
+                                <button class="btn-record d-flex invers full" type="button">
+                                    <span class="btn-record__text">Записаться</span>
+                                    <span class="btn-record__circle d-flex">
+                                        <svg class="arrow-icon" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.75 4.77295C0.335786 4.77295 0 5.10874 0 5.52295C0 5.93716 0.335786 6.27295 0.75 6.27295V5.52295V4.77295ZM13.2803 6.05328C13.5732 5.76039 13.5732 5.28551 13.2803 4.99262L8.50736 0.219648C8.21447 -0.073245 7.73959 -0.073245 7.4467 0.219648C7.15381 0.512542 7.15381 0.987415 7.4467 1.28031L11.6893 5.52295L7.4467 9.76559C7.15381 10.0585 7.15381 10.5334 7.4467 10.8263C7.73959 11.1191 8.21447 11.1191 8.50736 10.8263L13.2803 6.05328ZM0.75 5.52295V6.27295H12.75V5.52295V4.77295H0.75V5.52295Z" fill="currentColor"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="contacts__info-list footer-info">
+                            <li class="contacts__item footer-info-tel">
+                                <span class="contacts__item-value">
+                                    <a href="tel:+79136288113">+ 7 (913)628-81-13,</a>
+                                    <a href="tel:+73812325443">+ 7 (3812) 325-443</a>
+                                </span>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__item-value">
+                                    <address>Омск, ул. Маяковского, 83</address>
+                                </span>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__item-value">
+                                    <a href="mailto:garmoniy@bk.ru">garmoniy@bk.ru</a>
+                                </span>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__item-value">
+                                    <span>Пн-Пт: 09:00-20:00,</span>
+                                    <span>Сб: 09:00-14:00</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- JS Script -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
